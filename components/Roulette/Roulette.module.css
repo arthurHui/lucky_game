@@ -1,0 +1,29 @@
+
+
+.container{
+  border: 1px solid #000;
+  overflow: hidden;
+  display: flex;
+  width: 50%;
+}
+
+.boxContainer{
+  display: flex;
+  height: 40px;
+}
+
+.box{
+  height: 40px;
+  min-width: 40px;
+  flex: 1 1 auto;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
