@@ -14,7 +14,7 @@ const useRoulette = () => {
 
   const drawCircle = () => {
     let canvas = canvasRef.current
-    let startRadian = -90 * Math.PI / 180
+    let startRadian = 0
     if(!!canvas){
       let context = canvas.getContext('2d');
       context.save();
@@ -24,7 +24,7 @@ const useRoulette = () => {
       // 设置填充转盘用的颜色,fill是填充而不是绘制
       context.fillStyle = '#fff';
       // 绘制一个圆,有六个参数,分别表示:圆心的x坐标,圆心的y坐标,圆的半径,开始绘制的角度,结束的角度,绘制方向(false表示顺时针)
-      context.arc(211, 211, 211, startRadian, Math.PI * 2 + startRadian, false);
+      context.arc(211, 211, 211, startRadian, Math.PI * 2, false);
       // 将设置的颜色填充到圆中,这里不用closePath是因为closePath对fill无效.
       context.fill();
       // 将画布的状态恢复到上一次save()时的状态

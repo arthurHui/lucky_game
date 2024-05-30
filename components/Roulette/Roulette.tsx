@@ -12,7 +12,7 @@ const Roulette = () => {
 
   return (
     <div>
-      <canvas ref={canvasRef} />
+      <canvas ref={canvasRef} height={422} width={422} />
       <div>
         <button onClick={onClickStart}>start</button>
       </div>
